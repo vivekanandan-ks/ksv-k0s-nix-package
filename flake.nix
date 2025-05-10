@@ -36,7 +36,7 @@
         };
 
         devShells.default = pkgs.mkShell {
-          packages = [ k0s ];
+          packages = [ k0s pkgs.kubectl pkgs.k0sctl ];
         };
       });
 }
