@@ -1,2 +1,4 @@
 result
 k0s-default.yaml
+k0sctl.yaml
+kubeconfig
