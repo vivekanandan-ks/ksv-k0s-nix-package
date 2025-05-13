@@ -9,7 +9,9 @@
   outputs = { self, nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs { 
+          inherit system;
+        };
 
         k0s = pkgs.stdenv.mkDerivation {
           pname = "k0s";
